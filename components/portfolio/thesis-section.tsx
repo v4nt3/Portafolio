@@ -199,11 +199,11 @@ export function ThesisSection() {
                   {"Ver Repositorio"}
                 </a>
                 <a
-                  href="#"
+                  href="https://lumen-traductor.vercel.app/"
                   className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-card-foreground hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
                 >
                   <BookOpen className="h-4 w-4" />
-                  {"Ver Documento"}
+                  {"Ver Página Web"}
                 </a>
               </div>
             </div>

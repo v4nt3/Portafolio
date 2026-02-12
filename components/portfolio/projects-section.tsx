@@ -23,9 +23,9 @@ const projects: Project[] = [
   {
     title: "Portfolio 3D Interactivo",
     description:
-      "Sitio web con elementos 3D interactivos construidos con Three.js y Blender, mostrando habilidades de diseno multimedia.",
-    technologies: ["JavaScript", "Blender", "CSS", "HTML"],
-    github: "https://github.com",
+      "Sitio web con elementos 3D interactivos construidos con Blender.",
+    technologies: ["React", "Blender", "Tailwind", "Supabase"],
+    github: "https://github.com/v4nt3/SevaFinal.git",
     color: "from-primary/15 to-primary/5",
   },
   {
