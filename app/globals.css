@@ -1,26 +1,82 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  :root {
+    --background: 168 76% 97%;
+    --foreground: 179 84% 10%;
+    --card: 167 85% 93%;
+    --card-foreground: 179 84% 10%;
+    --popover: 167 85% 93%;
+    --popover-foreground: 179 84% 10%;
+    --primary: 174 72% 40%;
+    --primary-foreground: 168 76% 97%;
+    --secondary: 167 60% 89%;
+    --secondary-foreground: 162 83% 20%;
+    --muted: 167 60% 89%;
+    --muted-foreground: 162 83% 20%;
+    --accent: 84 81% 44%;
+    --accent-foreground: 179 84% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 167 40% 82%;
+    --input: 167 40% 82%;
+    --ring: 174 72% 40%;
+    --chart-1: 174 72% 40%;
+    --chart-2: 84 81% 44%;
+    --chart-3: 174 84% 32%;
+    --chart-4: 162 83% 20%;
+    --chart-5: 167 85% 78%;
+    --radius: 0.625rem;
+  }
+  .dark {
+    --background: 176 82% 10%;
+    --foreground: 186 100% 97%;
+    --card: 175 63% 15%;
+    --card-foreground: 186 100% 97%;
+    --popover: 175 63% 15%;
+    --popover-foreground: 186 100% 97%;
+    --primary: 172 66% 50%;
+    --primary-foreground: 176 82% 10%;
+    --secondary: 175 50% 20%;
+    --secondary-foreground: 167 85% 78%;
+    --muted: 175 50% 20%;
+    --muted-foreground: 167 85% 78%;
+    --accent: 84 78% 55%;
+    --accent-foreground: 176 82% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 175 40% 22%;
+    --input: 175 40% 22%;
+    --ring: 172 66% 50%;
+    --chart-1: 172 66% 50%;
+    --chart-2: 84 78% 55%;
+    --chart-3: 167 85% 78%;
+    --chart-4: 175 63% 30%;
+    --chart-5: 186 100% 90%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+
+  }
 }
